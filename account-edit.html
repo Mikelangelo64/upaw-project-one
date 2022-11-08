@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>uPaw - parthner</title>
+    <title>uPaw - account edit</title>
 
     <link rel="stylesheet" href="css/reset.css">
 
@@ -595,353 +595,113 @@
       </div>
     </div>
   </header>
-
-  <section class="parthners parthners-page">
+  
+  <div class="account-edit">
     <div class="_container">
-      <div class="parthners__wrapper">
+      <div class="account-edit__wrapper">
 
-        <div class="title__container">
-          <h2 class="title parthners__title">Наші партнери</h2>
-        </div>
-        
-
-        <div class="parthners__list">
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
+        <section class="edit">
+          <div class="edit__title__container">
+            <h2 class="edit__title">
+              Редагувати особисті данні
+            </h2>
           </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-          <div class="parthners__item">
-            <div class="parthners__logo">
-              <img src="./assets/img/label-logo-parthner.svg" alt="parthner">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="how-be-parthner">
-    <div class="_container">
-      <div class="how-be-parthner__wrapper">
-        <div class="title__container">
-          <h2 class="title how-be-parthner__title">Як стати партнером?</h2>
-        </div>
-        
-        <div class="how-be-parthner-list swiper">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="how-be-parthner-list__item">
-                <div class="how-be-parthner-list__step">
-                  <p>1</p>
-                  <span>Крок</span>
-                </div>
   
-                <p class="how-be-parthner-list__description">
-                  Lorem Ipsum является текст-заполнитель 
-                  обычно используется в графических, печать 
-                  и издательской индустрии для предварительного 
-                  просмотра макета                  
-                </p>
+          <form action="post" class="registration-form _edit">
+  
+            <div class="registration-form__section">
+              <input type="text" name="name" placeholder="Ім'я та Прізвище *">
+            </div>
+  
+            <div class="registration-form__section">
+              <input type="tel" name="telephone" placeholder="Номер телефону *">
+            </div>
+  
+            <div class="registration-form__section">
+              <input type='email' name="email" placeholder="Ел. пошта *">
+            </div>
+  
+            <div class="registration-form__section">
+              <div class="select__container">
+                <select name="region">
+                  <option value="default">Область * </option>
+                  <option value="Київська">Київська</option>
+                  <option value="Запорізька">Запорізька</option>
+                </select>
               </div>
             </div>
-
-            <div class="swiper-slide">
-              <div class="how-be-parthner-list__item">
-                <div class="how-be-parthner-list__step">
-                  <p>2</p>
-                  <span>Крок</span>
-                </div>
   
-                <p class="how-be-parthner-list__description">
-                    Lorem Ipsum является текст-заполнитель 
-                    обычно используется в графических, печать 
-                    и издательской индустрии для предварительного 
-                    просмотра макета
-                </p>
-              </div>
+            <div class="registration-form__section">
+              <div class="select__container">
+                <select name="city">
+                  <option value="default">Місто *</option>
+                  <option value="Київ">Київ</option>
+                  <option value="Запоріжжя">Запоріжжя</option>
+                </select>
+              </div> 
             </div>
-
-            <div class="swiper-slide">
-              <div class="how-be-parthner-list__item">
-                <div class="how-be-parthner-list__step">
-                  <p>3</p>
-                  <span>Крок</span>
-                </div>
   
-                <p class="how-be-parthner-list__description">
-                    Lorem Ipsum является текст-заполнитель 
-                    обычно используется в графических, печать 
-                    и издательской индустрии для предварительного 
-                    просмотра макета
-                </p>
-              </div>
+            <div class="registration-form__section _multiple">
+              <input type="text" name="street" placeholder="Вулиця *">
+              <input type="number" name="house" placeholder="№ буд">
+              <input type="number" name="post-index" placeholder="Поштовий індекс*">
             </div>
-          </div>
-          <div class="swiper-pagination how-be-parthner-list__pagination__container"></div>
-
-        </div>
+  
+            <div class="registration-form__section">
+              <textarea name="comment" placeholder="Додаткова інформація"></textarea>
+            </div>
+  
+            <div class="registration-form__section _submit">
+              <button class="_btn _btn-blue" type="submit">
+                Зберегти
+              </button>
+            </div>
+          </form>
+        </section>
         
+        <section class="edit _flex">
+          <div class="edit__title__container">
+            <h2 class="edit__title">
+              Інформація о тваринах
+            </h2>
+          </div>
+  
+          <form action="post" class="registration-form _edit _flex">
+  
+            <div class="registration-form__section _pet">
+              <div class="select__container">
+                <select name="pet-0">
+                  <option value="cat">Кішка</option>
+                  <option value="dog">Пес</option>
+                </select>
+              </div>
+  
+              <div class="registration-form__counter__container">
+                <p>Кількість тварини</p>
+                <div class="registration-form__counter">
+                  <a href="#" class="minus">-</a>
+                  <input type="number" required min="1" value="0">
+                  <a href="#" class="plus">+</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="registration-form__section _flex-grow">
+              <a href="#" class="registration-form-more">
+                Додати ще +
+              </a>
+            </div>
+  
+            <div class="registration-form__section _submit">
+              <button class="_btn _btn-blue" type="submit">
+                Зберегти
+              </button>
+            </div>
+          </form>
+        </section>
       </div>
     </div>
-  </section>
-
-  <section class="form-section">
-    <div class="_container form-section__container">
-        <div class="form-section__wrapper">
-            <h3 class="title form-section__title">Форма заповнення</h3>
-
-            <form action="post" class="form">
-                <div>
-                    <strong>
-                      <p>ім'я та прізвище</p>
-                      <input type="text" name="name" placeholder="Ім'я">
-                      <em>**Помилка, невірно заповнене поле</em>
-                    </strong>
-                    
-                </div>
-                
-                <div>
-                    <span>
-                        <strong>
-                          <p>телефон*</p>
-                          <input type="tel" name="phone" placeholder="Телефон *">
-                          <em>**Помилка, невірно заповнене поле</em>
-                        </strong>
-                    </span>
-                    <span>
-                        <strong>
-                          <p>Ваш Email</p>
-                          <input type="number" name="xz" placeholder="цифари якісь *">
-                          <em>**Помилка, невірно заповнене поле</em>
-                        </strong>
-                    </span>
-                </div>
-
-                <div>
-                    <strong>
-                      <p>назва компанії*</p>
-                      <input type="text" name="company" placeholder="Назва компанії *">
-                      <em>**Помилка, невірно заповнене поле</em>
-                    </strong>
-                    
-                </div>
-
-                <div>
-                    <strong>
-                      <p>Додати коментар</p>
-                      <textarea name="comment" placeholder="Коментар"></textarea>
-                    </strong>
-                </div>
-
-                <div>
-                    <button type="submit">стати партнером</button>
-                </div>
-                
-                
-            </form>
-        </div>
-    </div>
-  </section>
-
-  <section class="insta insta__small">
-    <div class="insta__wrapper swiper">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <a href="#" class="insta-item">
-            <img src="./assets/img/img-insta-1.png" alt="insta">
-            <span class="insta-item__hover">
-              <span class="insta-item__logo">
-                <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M33.2661 0.257812H15.4763C7.29009 0.257812 0.651489 6.89642 0.651489 15.0827V32.8725C0.651489 41.0587 7.29009 47.6974 15.4763 47.6974H33.2662C41.4524 47.6974 48.091 41.0587 48.091 32.8725V15.0827C48.0909 6.89642 41.4524 0.257812 33.2661 0.257812ZM43.6435 32.8725C43.6435 38.5949 38.9885 43.2499 33.2661 43.2499H15.4763C9.75392 43.2499 5.09892 38.5949 5.09892 32.8725V15.0827C5.09892 9.36026 9.75392 4.70526 15.4763 4.70526H33.2662C38.9886 4.70526 43.6436 9.36026 43.6436 15.0827V32.8725H43.6435ZM24.3711 12.1179C17.8215 12.1179 12.5113 17.4282 12.5113 23.9778C12.5113 30.5273 17.8215 35.8376 24.3711 35.8376C30.9207 35.8376 36.231 30.5273 36.231 23.9778C36.231 17.4282 30.9207 12.1179 24.3711 12.1179ZM24.3711 31.3902C20.2854 31.3902 16.9587 28.0635 16.9587 23.9778C16.9587 19.889 20.2854 16.5653 24.3711 16.5653C28.4569 16.5653 31.7835 19.889 31.7835 23.9778C31.7835 28.0635 28.4569 31.3902 24.3711 31.3902ZM36.231 34.6517C36.231 35.3067 35.7001 35.8376 35.045 35.8376C34.39 35.8376 33.8591 35.3067 33.8591 34.6517C33.8591 33.9967 34.39 33.4657 35.045 33.4657C35.7001 33.4657 36.231 33.9967 36.231 34.6517Z" fill="white"/>
-                </svg>
-              </span>
-              <p class="insta-item__description">
-                Наш інстаграм
-              </p>
-              <span class="insta-item__arrow">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.401856 5.60889L8.76873 5.60889L4.92904 1.7692L5.90186 0.796387L11.4019 6.29639L5.90186 11.7964L4.92904 10.8236L8.76873 6.98389L0.401856 6.98389L0.401856 5.60889Z" fill="#fff"></path>
-                </svg>
-              </span>
-            </span>
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a href="#" class="insta-item">
-            <img src="./assets/img/img-insta-2.png" alt="insta">
-            <span class="insta-item__hover">
-              <span class="insta-item__logo">
-                <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M33.2661 0.257812H15.4763C7.29009 0.257812 0.651489 6.89642 0.651489 15.0827V32.8725C0.651489 41.0587 7.29009 47.6974 15.4763 47.6974H33.2662C41.4524 47.6974 48.091 41.0587 48.091 32.8725V15.0827C48.0909 6.89642 41.4524 0.257812 33.2661 0.257812ZM43.6435 32.8725C43.6435 38.5949 38.9885 43.2499 33.2661 43.2499H15.4763C9.75392 43.2499 5.09892 38.5949 5.09892 32.8725V15.0827C5.09892 9.36026 9.75392 4.70526 15.4763 4.70526H33.2662C38.9886 4.70526 43.6436 9.36026 43.6436 15.0827V32.8725H43.6435ZM24.3711 12.1179C17.8215 12.1179 12.5113 17.4282 12.5113 23.9778C12.5113 30.5273 17.8215 35.8376 24.3711 35.8376C30.9207 35.8376 36.231 30.5273 36.231 23.9778C36.231 17.4282 30.9207 12.1179 24.3711 12.1179ZM24.3711 31.3902C20.2854 31.3902 16.9587 28.0635 16.9587 23.9778C16.9587 19.889 20.2854 16.5653 24.3711 16.5653C28.4569 16.5653 31.7835 19.889 31.7835 23.9778C31.7835 28.0635 28.4569 31.3902 24.3711 31.3902ZM36.231 34.6517C36.231 35.3067 35.7001 35.8376 35.045 35.8376C34.39 35.8376 33.8591 35.3067 33.8591 34.6517C33.8591 33.9967 34.39 33.4657 35.045 33.4657C35.7001 33.4657 36.231 33.9967 36.231 34.6517Z" fill="white"/>
-                </svg>
-              </span>
-              <p class="insta-item__description">
-                Наш інстаграм
-              </p>
-              <span class="insta-item__arrow">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.401856 5.60889L8.76873 5.60889L4.92904 1.7692L5.90186 0.796387L11.4019 6.29639L5.90186 11.7964L4.92904 10.8236L8.76873 6.98389L0.401856 6.98389L0.401856 5.60889Z" fill="#fff"></path>
-                </svg>
-              </span>
-            </span>
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a href="#" class="insta-item">
-            <img src="./assets/img/img-insta-3.png" alt="insta">
-            <span class="insta-item__hover">
-              <span class="insta-item__logo">
-                <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M33.2661 0.257812H15.4763C7.29009 0.257812 0.651489 6.89642 0.651489 15.0827V32.8725C0.651489 41.0587 7.29009 47.6974 15.4763 47.6974H33.2662C41.4524 47.6974 48.091 41.0587 48.091 32.8725V15.0827C48.0909 6.89642 41.4524 0.257812 33.2661 0.257812ZM43.6435 32.8725C43.6435 38.5949 38.9885 43.2499 33.2661 43.2499H15.4763C9.75392 43.2499 5.09892 38.5949 5.09892 32.8725V15.0827C5.09892 9.36026 9.75392 4.70526 15.4763 4.70526H33.2662C38.9886 4.70526 43.6436 9.36026 43.6436 15.0827V32.8725H43.6435ZM24.3711 12.1179C17.8215 12.1179 12.5113 17.4282 12.5113 23.9778C12.5113 30.5273 17.8215 35.8376 24.3711 35.8376C30.9207 35.8376 36.231 30.5273 36.231 23.9778C36.231 17.4282 30.9207 12.1179 24.3711 12.1179ZM24.3711 31.3902C20.2854 31.3902 16.9587 28.0635 16.9587 23.9778C16.9587 19.889 20.2854 16.5653 24.3711 16.5653C28.4569 16.5653 31.7835 19.889 31.7835 23.9778C31.7835 28.0635 28.4569 31.3902 24.3711 31.3902ZM36.231 34.6517C36.231 35.3067 35.7001 35.8376 35.045 35.8376C34.39 35.8376 33.8591 35.3067 33.8591 34.6517C33.8591 33.9967 34.39 33.4657 35.045 33.4657C35.7001 33.4657 36.231 33.9967 36.231 34.6517Z" fill="white"/>
-                </svg>
-              </span>
-              <p class="insta-item__description">
-                Наш інстаграм
-              </p>
-              <span class="insta-item__arrow">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.401856 5.60889L8.76873 5.60889L4.92904 1.7692L5.90186 0.796387L11.4019 6.29639L5.90186 11.7964L4.92904 10.8236L8.76873 6.98389L0.401856 6.98389L0.401856 5.60889Z" fill="#fff"></path>
-                </svg>
-              </span>
-            </span>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#" class="insta-item">
-            <img src="./assets/img/img-insta-4.png" alt="insta">
-            <span class="insta-item__hover">
-              <span class="insta-item__logo">
-                <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M33.2661 0.257812H15.4763C7.29009 0.257812 0.651489 6.89642 0.651489 15.0827V32.8725C0.651489 41.0587 7.29009 47.6974 15.4763 47.6974H33.2662C41.4524 47.6974 48.091 41.0587 48.091 32.8725V15.0827C48.0909 6.89642 41.4524 0.257812 33.2661 0.257812ZM43.6435 32.8725C43.6435 38.5949 38.9885 43.2499 33.2661 43.2499H15.4763C9.75392 43.2499 5.09892 38.5949 5.09892 32.8725V15.0827C5.09892 9.36026 9.75392 4.70526 15.4763 4.70526H33.2662C38.9886 4.70526 43.6436 9.36026 43.6436 15.0827V32.8725H43.6435ZM24.3711 12.1179C17.8215 12.1179 12.5113 17.4282 12.5113 23.9778C12.5113 30.5273 17.8215 35.8376 24.3711 35.8376C30.9207 35.8376 36.231 30.5273 36.231 23.9778C36.231 17.4282 30.9207 12.1179 24.3711 12.1179ZM24.3711 31.3902C20.2854 31.3902 16.9587 28.0635 16.9587 23.9778C16.9587 19.889 20.2854 16.5653 24.3711 16.5653C28.4569 16.5653 31.7835 19.889 31.7835 23.9778C31.7835 28.0635 28.4569 31.3902 24.3711 31.3902ZM36.231 34.6517C36.231 35.3067 35.7001 35.8376 35.045 35.8376C34.39 35.8376 33.8591 35.3067 33.8591 34.6517C33.8591 33.9967 34.39 33.4657 35.045 33.4657C35.7001 33.4657 36.231 33.9967 36.231 34.6517Z" fill="white"/>
-                </svg>
-              </span>
-              <p class="insta-item__description">
-                Наш інстаграм
-              </p>
-              <span class="insta-item__arrow">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.401856 5.60889L8.76873 5.60889L4.92904 1.7692L5.90186 0.796387L11.4019 6.29639L5.90186 11.7964L4.92904 10.8236L8.76873 6.98389L0.401856 6.98389L0.401856 5.60889Z" fill="#fff"></path>
-                </svg>
-              </span>
-            </span>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#" class="insta-item">
-            <img src="./assets/img/img-insta-1.png" alt="insta">
-            <span class="insta-item__hover">
-              <span class="insta-item__logo">
-                <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M33.2661 0.257812H15.4763C7.29009 0.257812 0.651489 6.89642 0.651489 15.0827V32.8725C0.651489 41.0587 7.29009 47.6974 15.4763 47.6974H33.2662C41.4524 47.6974 48.091 41.0587 48.091 32.8725V15.0827C48.0909 6.89642 41.4524 0.257812 33.2661 0.257812ZM43.6435 32.8725C43.6435 38.5949 38.9885 43.2499 33.2661 43.2499H15.4763C9.75392 43.2499 5.09892 38.5949 5.09892 32.8725V15.0827C5.09892 9.36026 9.75392 4.70526 15.4763 4.70526H33.2662C38.9886 4.70526 43.6436 9.36026 43.6436 15.0827V32.8725H43.6435ZM24.3711 12.1179C17.8215 12.1179 12.5113 17.4282 12.5113 23.9778C12.5113 30.5273 17.8215 35.8376 24.3711 35.8376C30.9207 35.8376 36.231 30.5273 36.231 23.9778C36.231 17.4282 30.9207 12.1179 24.3711 12.1179ZM24.3711 31.3902C20.2854 31.3902 16.9587 28.0635 16.9587 23.9778C16.9587 19.889 20.2854 16.5653 24.3711 16.5653C28.4569 16.5653 31.7835 19.889 31.7835 23.9778C31.7835 28.0635 28.4569 31.3902 24.3711 31.3902ZM36.231 34.6517C36.231 35.3067 35.7001 35.8376 35.045 35.8376C34.39 35.8376 33.8591 35.3067 33.8591 34.6517C33.8591 33.9967 34.39 33.4657 35.045 33.4657C35.7001 33.4657 36.231 33.9967 36.231 34.6517Z" fill="white"/>
-                </svg>
-              </span>
-              <p class="insta-item__description">
-                Наш інстаграм
-              </p>
-              <span class="insta-item__arrow">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.401856 5.60889L8.76873 5.60889L4.92904 1.7692L5.90186 0.796387L11.4019 6.29639L5.90186 11.7964L4.92904 10.8236L8.76873 6.98389L0.401856 6.98389L0.401856 5.60889Z" fill="#fff"></path>
-                </svg>
-              </span>
-            </span>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#" class="insta-item">
-            <img src="./assets/img/img-insta-5.png" alt="insta">
-            <span class="insta-item__hover">
-              <span class="insta-item__logo">
-                <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M33.2661 0.257812H15.4763C7.29009 0.257812 0.651489 6.89642 0.651489 15.0827V32.8725C0.651489 41.0587 7.29009 47.6974 15.4763 47.6974H33.2662C41.4524 47.6974 48.091 41.0587 48.091 32.8725V15.0827C48.0909 6.89642 41.4524 0.257812 33.2661 0.257812ZM43.6435 32.8725C43.6435 38.5949 38.9885 43.2499 33.2661 43.2499H15.4763C9.75392 43.2499 5.09892 38.5949 5.09892 32.8725V15.0827C5.09892 9.36026 9.75392 4.70526 15.4763 4.70526H33.2662C38.9886 4.70526 43.6436 9.36026 43.6436 15.0827V32.8725H43.6435ZM24.3711 12.1179C17.8215 12.1179 12.5113 17.4282 12.5113 23.9778C12.5113 30.5273 17.8215 35.8376 24.3711 35.8376C30.9207 35.8376 36.231 30.5273 36.231 23.9778C36.231 17.4282 30.9207 12.1179 24.3711 12.1179ZM24.3711 31.3902C20.2854 31.3902 16.9587 28.0635 16.9587 23.9778C16.9587 19.889 20.2854 16.5653 24.3711 16.5653C28.4569 16.5653 31.7835 19.889 31.7835 23.9778C31.7835 28.0635 28.4569 31.3902 24.3711 31.3902ZM36.231 34.6517C36.231 35.3067 35.7001 35.8376 35.045 35.8376C34.39 35.8376 33.8591 35.3067 33.8591 34.6517C33.8591 33.9967 34.39 33.4657 35.045 33.4657C35.7001 33.4657 36.231 33.9967 36.231 34.6517Z" fill="white"/>
-                </svg>
-              </span>
-              <p class="insta-item__description">
-                Наш інстаграм
-              </p>
-              <span class="insta-item__arrow">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.401856 5.60889L8.76873 5.60889L4.92904 1.7692L5.90186 0.796387L11.4019 6.29639L5.90186 11.7964L4.92904 10.8236L8.76873 6.98389L0.401856 6.98389L0.401856 5.60889Z" fill="#fff"></path>
-                </svg>
-              </span>
-            </span>
-          </a>          
-        </div>
-      </div>
-
-    </div>
-  </section>
+  </div>
 
   <footer class="footer">
     <div class="_container">
