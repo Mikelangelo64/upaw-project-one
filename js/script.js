@@ -282,6 +282,31 @@ $(document).ready(function(){
         })
     }
 
+    activateToggleProject('.project-toggle')
+
+    function activateToggleProject(section){
+        $(`${section} .project-toggle-content__item`).not($(`${section} .project-toggle-content__item._active-page`)).fadeOut(200)
+
+        $(`${section} .project-toggle-head__item`).click(function(event){
+            //console.log(1, this);
+            //const menuLink = event.target;
+            const goto = $(this).attr('data-toggle-page');
+        // console.log(2, $(goto));
+        if(goto && $(goto)){
+                $(this).addClass("_active-page");
+                $(`${section} ${goto}`).addClass("_active-page");
+
+                $(`${section} .project-toggle-head__item`).not($(this)).removeClass("_active-page");
+                $(`${section} .project-toggle-content__item`).not($(goto)).removeClass("_active-page");
+                $(`${section} .project-toggle-content__item`).not($(goto)).fadeOut(0)
+            
+                $(goto).fadeIn(400);
+            }
+
+            event.preventDefault();
+        })
+    }
+
     //faq-accordion
 
     $('.accordion-item .accordion-item__text .accordion-item__subtitle').slideUp(0)
