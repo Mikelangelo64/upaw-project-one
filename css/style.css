@@ -3534,6 +3534,62 @@ a, button, .logo {
     width: 80%;
   }
 }
+.swiper-projects__statistic {
+  margin-bottom: 28px;
+}
+.swiper-projects__statistic__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2A4F5E;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1030px) {
+  .swiper-projects__statistic__item {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.swiper-projects__statistic__item p {
+  margin-right: 5px;
+}
+.swiper-projects__statistic__item:last-child {
+  margin-bottom: 0;
+}
+.swiper-projects__more {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #006ED2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.swiper-projects__more:hover {
+  color: #2A4F5E;
+}
+.swiper-projects__more:hover svg path {
+  fill: #2A4F5E;
+}
+.swiper-projects__more svg {
+  margin-left: 4px;
+  width: 11px;
+  height: auto;
+}
+.swiper-projects__more svg path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 
 .projects__pagination__container {
   max-width: 95%;
@@ -4746,6 +4802,7 @@ a, button, .logo {
 @media (max-width: 830px) {
   .contact {
     padding: 96px 0 54px;
+    background-color: #fff;
   }
 }
 @media (max-width: 550px) {
@@ -4850,6 +4907,9 @@ a, button, .logo {
 @media (max-width: 830px) {
   .insta.insta__grey {
     background-color: transparent;
+  }
+  .insta.insta__grey._full {
+    background-color: #F6F6F6;
   }
 }
 .insta__wrapper {
@@ -6392,7 +6452,7 @@ a, button, .logo {
   margin-bottom: 75px;
 }
 .banner-mission__next:hover, .banner-mission__next:focus-visible {
-  color: #006ED2;
+  color: #FFB11A;
 }
 @media (max-width: 830px) {
   .banner-mission__next {
@@ -6409,8 +6469,8 @@ a, button, .logo {
           flex: 0 0 5px;
   width: 100%;
   height: auto;
-  -webkit-transform: translateY(1.5px);
-          transform: translateY(1.5px);
+  -webkit-transform: translateY(0.5px);
+          transform: translateY(0.5px);
   margin-left: 5px;
 }
 .banner-mission__next svg path {
@@ -6418,11 +6478,11 @@ a, button, .logo {
   transition: fill 0.3s ease;
 }
 .banner-mission__next:hover path {
-  fill: #006ED2;
+  fill: #FFB11A;
 }
 
 .banner-mission__next:focus-visible path {
-  fill: #006ED2;
+  fill: #FFB11A;
 }
 
 .banner-mission__date {
